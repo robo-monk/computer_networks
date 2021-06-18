@@ -70,3 +70,6 @@ Happends when a node goes offline.
 <img src="shortest_path_alg.png">
 
 
+## Hierarchical routing
+* Reducing routing table size for large networks.
+<img src="hierarchical_routing.png">
