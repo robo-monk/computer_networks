@@ -27,7 +27,7 @@ For every address, which link should you forward the packet to.
 <img src="routing_table_eg.png">
 
 ---
-## Distance vector routing
+## Distance vector routing (DV)
 
 1. Send your distance vector to your neighbors.
 2. You use incoming distance vectors from your neighbour to construct a routing table
@@ -40,5 +40,33 @@ For every address, which link should you forward the packet to.
 
 Happends when a node goes offline.
 <img src="count_to_infinity_problem.png">
+
+
+## Link state routing (LS)
+
+* Does not suffer from the count to infinity problem, but itsmore complicated
+* Uses a shortest path algorithm
+
+1. Routers only send packets w/ information about their direct neighbors
+2. These packets flooded over the network
+3. Routers build an overview of the network using these packets and run a shortest path algorithm
+
+<img src="flooding_ls_packets.png">
+
+#### Problems
+* Old packets can overtake new packets and confuse the routing tables
+* Using sequence numbers:
+	* you never know which number is the latest one
+	* one bit flip away form chaos
+	
+
+##### Building the map
+<img src="ls_building_map.png">
+
+##### Cost
+<img src="ls_map_cost.png">
+
+##### Shortest path ( using Dijkstra's algorithm)
+<img src="shortest_path_alg.png">
 
 
