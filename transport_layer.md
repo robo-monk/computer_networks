@@ -45,3 +45,63 @@ aka. the TSAP to the NSAP*
 
 > there's always the concept of inverse multiplexing, one transport connection over multiple network connections (for this to work you need a machine that can hold multiple connections open)
 
+
+## Transport Layer Headers
+
+### UDP - User Datagram Protocol
+
+* Very thin layer on top of IP. Header provides ports needed to connect to remote applications
+
+<img src="udp_header.png">
+
+* Allthough it has a checksum, UDP does not automatically re-transmit
+* Applications can use the checksum to trigger retransmission
+
+### TCP - Transmission Control Protocol
+* Provides a reliable end-to-end byte stream over an unreliable network
+* It has:
+	* Error detection
+	* Automatic retransmission
+	* Flow control
+	* Congestion control
+
+<img src="tcp_header.png">
+
+### UDP vs TCP
+> RFC - request for comment are published by the interent engineering task force (IETF) lol wtf
+
+##### UDP is RFC 768
+##### TCP has multiple RFCs, w/ an overview in RFC 4614
+
+
+* TCP is connection oriented, thus for each TCP connection, local state consists of 
+	* Next sequence number to use
+	* Next acknoweledgement number to use
+	* Congestion window
+	* Timers for retransmission
+
+* TCP also has a header length, because TCP header also supports optional options.
+
+
+## TCP/UDP checksum
+* Allthough we do some error correction in the data link layer, there are several error sources:
+	* Routers
+		* Drop packets due to congestion or misfunction
+		* Flip bits at router rather than during transmission
+	* Data link layer
+		* Error detection/correction misses some errors
+
+### 16-bit ones' complement
+#### Sender
+1. Divide data (egg, other header fields & body into 16-bit words)
+2. Compute bitwise XOR over all words
+3. Take ones' complement of result (egg. flip all bits)
+
+<img src="checksum_sender.png">
+
+#### Receiver
+1. Divide header including checksum & body into 16-bit words
+2. Compute bitwise XOR over all words
+3. If not all bits in result are 1, there was an error
+
+<img src="checksum_receiver.png">
