@@ -31,3 +31,5 @@
 * A route to a destination is a next hop router and a list of ASes
 * Routing costs are not communicated
 * An AS chooses a route using its own policies
+	
+<img src="bgp_example.png">
