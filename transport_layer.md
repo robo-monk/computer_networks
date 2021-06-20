@@ -171,3 +171,45 @@ aka. the TSAP to the NSAP*
 
 <img src="tcp_retransmission.png">
 
+
+---
+
+<img src="abstract_congestion_vs_flowcontrol.png">
+
+---
+
+## TCP Flow Control
+
+* Window size field in TCP header is used to indicate how much more data the receiver can handle
+
+* Tiny window sizes cause large overhead (silly-window syndrome)
+
+
+## Congestion Conrol
+
+> Both the network layer and the transport layer are responsible for congestion control
+
+**The transport layer contols the offered load**
+
+* Bigger Network Load:
+	* Less throughput
+	* More delay
+
+### Dynamically adjust bandwidth
+* Keep trying to increase bandwidth usage
+* Slow down when receiving congestion signal
+	* Explicit feedback (from routers)
+	* Loss ( from the randomly dropped packets )
+	* Latency (delays between received acks bigger than between sent segments)
+
+<img src="sharing_bandwidth.png">
+
+
+
+
+## Connection Conrol in TCP
+### Symmetric Connection Release
+* Participant 1:  FIN
+* Participant 2:  FIN
+* Participant 1:  ACK
+* connection is released
