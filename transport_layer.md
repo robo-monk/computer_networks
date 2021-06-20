@@ -159,4 +159,15 @@ aka. the TSAP to the NSAP*
 
 <img src="tcp_acks.png">
 
+---
+##### eggs.
+<img src="tcp_direct_ack_egg.png">
+<img src="tcp_piggybacked_ack_egg.png">
+
+
+## Duplicate ack
+* Segments considered lost when timer expires
+* Retransmission on 4th ack (w/ same sequence number) or after 3 duplicates. Earlier retransmission if timer expires. (works well in practice, avoids triggering verbose retransmission when segments arrive out of order)
+
+<img src="tcp_retransmission.png">
 
