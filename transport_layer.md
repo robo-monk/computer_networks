@@ -105,3 +105,58 @@ aka. the TSAP to the NSAP*
 3. If not all bits in result are 1, there was an error
 
 <img src="checksum_receiver.png">
+
+
+## Message Types
+#### SYN
+* connection establishment
+* doesnt have a body
+#### ACK
+* acknowledgement
+* doesnt have a body
+#### FIN
+* connection termination
+* doesnt have a body
+
+	
+## Sequence Numbers
+* **used to find lost data**
+* implemented on TCP
+* each party has a local state, telling them which acknoweledgemnt & sequence number to use next
+
+### Purposes
+* Used to detect:
+	* missing segments - **data link layer issue**
+	* segments arrive out of order 
+	* parts of segments are missing
+	* duplicates
+
+	
+---
+
+* before sending SYN: choose initial sequence number
+* when receiving SYN: choose initial sequence number
+* every data byte adds 1 to the sequence number
+* SYN & FIN also add 1 to the sequence number
+* ACKs do not increase sequence numbers
+* if sequence/ack numbers in messages do not match locally stored ones: retransmit
+
+#### Generate next sequence number
+= inital own sequence number + number of previously sent bytes
+
+#### Generate next Acknowledgement number
+= inital sequence number of communication partner + number of previously received bytes
+
+
+## TCP connection establishment
+### Three-way handshake
+<img src="tcp_handshake.png">
+
+## TCP acknowledgements
+
+1. Direct ACK: only TCP header with ACK field set to 1
+2. Piggybacked ACK: Increase ACK number in next TCP segment with an actual payload & ACK field in header set to 0
+
+<img src="tcp_acks.png">
+
+
