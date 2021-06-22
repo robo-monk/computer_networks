@@ -25,6 +25,9 @@ then
 
 # Collision-Free Protocols
 (*very restrictive protocols*)
+* They have a higher overhead than other protocols.
+
+
 
 ## Token ring
 - Stations are arranged in a ring
