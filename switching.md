@@ -12,12 +12,12 @@
 * Frames have source & destination information
 * Switch keeps a hash table that maps addresses to port numbers
 **keeps also track of last time seen**
-<img src="switch_algo.png">
+<img src="images/switch_algo.png">
 
 ## Spanning tree protocol
 > use extra cables to be safe
 
-<img src="stp_main.png">
+<img src="images/stp_main.png">
 
 #### Reacting to failures
-<img src="stp_failures.png">
+<img src="images/stp_failures.png">

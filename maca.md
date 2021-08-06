@@ -4,8 +4,8 @@
 Terminals (stations for wireless networks) have a range. Their transmissions are only received by parties within the range
 
 ## Wireless & carrier-sense problems
-<img src="maca_exposed_node.png">
-<img src="maca_hidden_nodes_2.png">
+<img src="images/maca_exposed_node.png">
+<img src="images/maca_hidden_nodes_2.png">
 
 ## MACA to the fucking kind off rescue
 > Multiple Access with collision avoidance

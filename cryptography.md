@@ -44,3 +44,5 @@ They make us of:
 * Alice computes `C = M xor K` and sends `C`
 * Bob can get M by `C xor K = M`
 
+## Block Ciphers
+

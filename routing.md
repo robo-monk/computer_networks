@@ -24,7 +24,7 @@ The collection of all best paths to a given destination forms a **tree**
 For every address, which link should you forward the packet to. 
 
 > Routing table for C.
-<img src="routing_table_eg.png">
+<img src="images/routing_table_eg.png">
 
 ---
 ## Distance vector routing (DV)
@@ -33,13 +33,13 @@ For every address, which link should you forward the packet to.
 2. You use incoming distance vectors from your neighbour to construct a routing table
 
 > Updating routing table
-<img src="routing_table_dvr1.png">
-<img src="routing_table_dvr2.png">
+<img src="images/routing_table_dvr1.png">
+<img src="images/routing_table_dvr2.png">
 
 ### Problem - Count to infinity
 
 Happends when a node goes offline.
-<img src="count_to_infinity_problem.png">
+<img src="images/count_to_infinity_problem.png">
 
 
 ## Link state routing (LS)
@@ -51,7 +51,7 @@ Happends when a node goes offline.
 2. These packets flooded over the network
 3. Routers build an overview of the network using these packets and run a shortest path algorithm
 
-<img src="flooding_ls_packets.png">
+<img src="images/flooding_ls_packets.png">
 
 #### Problems
 * Old packets can overtake new packets and confuse the routing tables
@@ -61,15 +61,15 @@ Happends when a node goes offline.
 	
 
 ##### Building the map
-<img src="ls_building_map.png">
+<img src="images/ls_building_map.png">
 
 ##### Cost
-<img src="ls_map_cost.png">
+<img src="images/ls_map_cost.png">
 
 ##### Shortest path ( using Dijkstra's algorithm)
-<img src="shortest_path_alg.png">
+<img src="images/shortest_path_alg.png">
 
 
 ## Hierarchical routing
 * Reducing routing table size for large networks.
-<img src="hierarchical_routing.png">
+<img src="images/hierarchical_routing.png">

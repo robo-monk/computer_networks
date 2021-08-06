@@ -3,10 +3,10 @@ Combined responsibility of the network & transport layers
 
 > Goodput: rate of useful packets arriving at the receiver
 
-<img src="goodput_diagram.png"> 
+<img src="images/goodput_diagram.png"> 
 
 ## Approaches
-<img src="congestion_control_approaches.png"> 
+<img src="images/congestion_control_approaches.png"> 
 
 ___
 
@@ -21,7 +21,7 @@ Choose routes depending on traffic not just topology
 ### Admission control
 If there is congestion, new traffic has to wait.
 * use virtual circuits
-<img src="admission_control.png"> 
+<img src="images/admission_control.png"> 
 
 ### Traffic throttling
 Send messages in the opposite direction to explicitly indicate network congestion.

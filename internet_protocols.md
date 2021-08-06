@@ -1,7 +1,7 @@
 # Internet Protocols
 
 ## IP version 4 - IPv4
-<img src="ipv4_packet_header.png">
+<img src="images/ipv4_packet_header.png">
 * 32-bit, 4 billion addresses
 * written in dotted decimal notation (`0x80D00297` -> `128.208.2.151`)
 * Time to live field in order to avoid infinite void loops in the network
@@ -9,18 +9,18 @@
 
 eg. Address starts with 37.60? If yes route to TUD
 
-<img src="ip_addr_egg.png">
+<img src="images/ip_addr_egg.png">
 
 ## ClDR - Classless InterDomain Routing
 * route aggregation technique group IPs that start the same & send them to a node to handle
 
-<img src="cidr_diagram.png">
+<img src="images/cidr_diagram.png">
 
 ## Network Address Translation (NAT)
 * How to let everybody go online with only 2^32 addresses?
 * Losing control, no oversight, no transparency
-<img src="nat_egg.png">
-<img src="nat_egg_details.png">
+<img src="images/nat_egg.png">
+<img src="images/nat_egg_details.png">
 
 ## IP version 6 - IPv6
 1. Many more addresses
@@ -40,9 +40,9 @@ egg.
 * Router advertisement/solicitation
 	
 ## Address Resolution Protocol (ARP)
-<img src="arp_diagram.png">
+<img src="images/arp_diagram.png">
 
 ## Dynamic Host Configuration Protocol (DHCP)
-<img src="dhcp_diagram.png">
+<img src="images/dhcp_diagram.png">
 
 

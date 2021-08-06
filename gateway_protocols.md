@@ -10,7 +10,7 @@
 * Load balancing
 * Dynamicity - adapts to changes in the topology
 * Hierarchy - uses `areas` to manage large networks
-<img src="ospf_hierarchy.png">
+<img src="images/ospf_hierarchy.png">
 
 
 ## Exterior Gateway Protocol
@@ -23,7 +23,7 @@
 * advertise (or not) routes to destinations to each other
 * have transit or peering policies
 
-<img src="bgp_diagram.png">
+<img src="images/bgp_diagram.png">
 
 
 * Uses a form of **distance vector routing**, combined with a path vector protocol
@@ -32,4 +32,4 @@
 * Routing costs are not communicated
 * An AS chooses a route using its own policies
 	
-<img src="bgp_example.png">
+<img src="images/bgp_example.png">

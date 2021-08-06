@@ -2,7 +2,7 @@
 > 150 million emails sent every minute, 9/10 are spam lol
 
 ## Message formats
-<img src="email_structure.png">
+<img src="images/email_structure.png">
 
 ## How does it work?
 1. Users use POP3 or IMAP to interact with their mailbox

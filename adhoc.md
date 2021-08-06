@@ -11,12 +11,12 @@
 ## Wireless Mesh Network (WMN)
 * Ad-hoc network extending internet to regions hard to reach
 * Differentation in mesh clients, routers, gateways
-<img src="wmn_schema.png">
+<img src="images/wmn_schema.png">
 
 ## Mobile Ad-hoc Network (MANET)
 * Mobile nodes
 * Connection changes as nodes in reach change
-<img src="manet_schema.png">
+<img src="images/manet_schema.png">
 
 ## Vehicular Ad-hoc Network (VANET)
 * Mobile nodes are vehicles
@@ -27,5 +27,5 @@
 ## Delay Tolerant Network (DTN)
 Parts of the network that are not currently connected, can be connected in a later time
 
-<img src="dtn_schema.png">
+<img src="images/dtn_schema.png">
 

@@ -41,7 +41,7 @@ aka. the TSAP to the NSAP*
 
 ## Multiplexing 
 #### Multiple transport connections over one network connection
-<img src="multiplexing_concept.png">
+<img src="images/multiplexing_concept.png">
 
 > there's always the concept of inverse multiplexing, one transport connection over multiple network connections (for this to work you need a machine that can hold multiple connections open)
 
@@ -52,7 +52,7 @@ aka. the TSAP to the NSAP*
 
 * Very thin layer on top of IP. Header provides ports needed to connect to remote applications
 
-<img src="udp_header.png">
+<img src="images/udp_header.png">
 
 * Allthough it has a checksum, UDP does not automatically re-transmit
 * Applications can use the checksum to trigger retransmission
@@ -65,7 +65,7 @@ aka. the TSAP to the NSAP*
 	* Flow control
 	* Congestion control
 
-<img src="tcp_header.png">
+<img src="images/tcp_header.png">
 
 ### UDP vs TCP
 > RFC - request for comment are published by the interent engineering task force (IETF) lol wtf
@@ -97,14 +97,14 @@ aka. the TSAP to the NSAP*
 2. Compute bitwise XOR over all words
 3. Take ones' complement of result (egg. flip all bits)
 
-<img src="checksum_sender.png">
+<img src="images/checksum_sender.png">
 
 #### Receiver
 1. Divide header including checksum & body into 16-bit words
 2. Compute bitwise XOR over all words
 3. If not all bits in result are 1, there was an error
 
-<img src="checksum_receiver.png">
+<img src="images/checksum_receiver.png">
 
 
 ## Message Types
@@ -150,31 +150,31 @@ aka. the TSAP to the NSAP*
 
 ## TCP connection establishment
 ### Three-way handshake
-<img src="tcp_handshake.png">
+<img src="images/tcp_handshake.png">
 
 ## TCP acknowledgements
 
 1. Direct ACK: only TCP header with ACK field set to 1
 2. Piggybacked ACK: Increase ACK number in next TCP segment with an actual payload & ACK field in header set to 0
 
-<img src="tcp_acks.png">
+<img src="images/tcp_acks.png">
 
 ---
 ##### eggs.
-<img src="tcp_direct_ack_egg.png">
-<img src="tcp_piggybacked_ack_egg.png">
+<img src="images/tcp_direct_ack_egg.png">
+<img src="images/tcp_piggybacked_ack_egg.png">
 
 
 ## Duplicate ack
 * Segments considered lost when timer expires
 * Retransmission on 4th ack (w/ same sequence number) or after 3 duplicates. Earlier retransmission if timer expires. (works well in practice, avoids triggering verbose retransmission when segments arrive out of order)
 
-<img src="tcp_retransmission.png">
+<img src="images/tcp_retransmission.png">
 
 
 ---
 
-<img src="abstract_congestion_vs_flowcontrol.png">
+<img src="images/abstract_congestion_vs_flowcontrol.png">
 
 ---
 
@@ -202,7 +202,7 @@ aka. the TSAP to the NSAP*
 	* Loss ( from the randomly dropped packets )
 	* Latency (delays between received acks bigger than between sent segments)
 
-<img src="sharing_bandwidth.png">
+<img src="images/sharing_bandwidth.png">
 
 
 

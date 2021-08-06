@@ -13,11 +13,11 @@
 
 ## Queries
 ### Recursive Queries
-<img src="recursive_domain_queries.png">
+<img src="images/recursive_domain_queries.png">
 
 
 ### Iterative Queries
-<img src="iterative_domain_queries.png">
+<img src="images/iterative_domain_queries.png">
 
 > Every endpoint in the schema using caching to save computing power
 
