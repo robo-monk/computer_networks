@@ -24,3 +24,8 @@ binary: 01101101 01100101
 base64: 011011 01011 0101`00`
 ascii: bVU=
 
+How many characters does the Base64 encoding of 3,688 bytes have?
+3,688/3=1229.33, so there are 1229 groups of 3 bytes and 1 byte left over.
+Each of 3 bytes is encoded as 4 characters, so 4⋅1229=4916 characters.
+The last byte is encoded as 2 Base64 characters, and two = signs are appended for padding.
+Hence, the total number of characters is 4916+2+2=4920.
